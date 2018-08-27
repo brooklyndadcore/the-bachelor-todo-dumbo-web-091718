@@ -48,15 +48,16 @@ def get_occupation(data, hometown)
   end
 end
 
-def get_average_age_for_season(data, season)
-  count = 0
+ count = 0
+ div = 0 
   data.each do |ele|
     if ele[0] == season
-      div = ele[1].length
+      div += ele[1].length
       ele[1].each do |hsh|
        count += hsh["age"].to_i
       end
     end
   end
-  return count/25
+  final = count.to_f/div
+  return final.ceil
 end
