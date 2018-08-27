@@ -18,13 +18,13 @@ def get_contestant_name(data, occupation)
   data.each do |ele|
     if ele[0] == season
       ele[1].each do |hsh|
-        if hsh["occupation"] == "Winner" 
+        if hsh["occupation"] == "Cruise Ship Singer" 
           arr = hsh["name"].split(" ")
         end
       end
     end
   end
-  return arr[0]
+  return arr.join(" ")
 end
 
 def count_contestants_by_hometown(data, hometown)
