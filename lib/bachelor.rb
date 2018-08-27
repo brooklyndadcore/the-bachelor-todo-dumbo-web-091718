@@ -29,12 +29,12 @@ def count_contestants_by_hometown(data, hometown)
   count = 0
   data.each do |ele|
     ele[1].each do |hsh|
-      if hsh["occupation"] == occupation
-        arr = hsh["name"].split(" ")
+      if hsh["hometown"] == hometown
+        count += 1
       end
     end
   end
-  return arr.count
+  return count
 end
 
 def get_occupation(data, hometown)
