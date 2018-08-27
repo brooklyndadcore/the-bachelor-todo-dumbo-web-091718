@@ -50,7 +50,6 @@ end
 
 def get_average_age_for_season(data, season)
   count = 0
-  div = 0
   data.each do |ele|
     if ele[0] == season
       div = ele[1].length
@@ -59,5 +58,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  return div
+  return count/25
 end
