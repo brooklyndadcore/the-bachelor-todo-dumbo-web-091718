@@ -49,5 +49,15 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  count = 26
+  data.each do |ele|
+    if ele[0] == season
+      ele[1].each do |hsh|
+        if hsh["status"] == "Winner" 
+          arr = hsh["name"].split(" ")
+        end
+      end
+    end
+  end
+  return arr[0]
 end
