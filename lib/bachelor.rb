@@ -4,12 +4,13 @@ def get_first_name_of_season_winner(data, season)
   arr = []
   app_sea.each do |ele|
     if ele == season
-      app_sea[ele].each do |ele1|
-        puts ele1
-        # if ele1["status"] == "Winner" 
-        #   arr = ele1["name"].split(" ")
-        # end
-      end
+      return ele
+      # app_sea[ele].each do |ele1|
+      #   puts ele1
+      #   # if ele1["status"] == "Winner" 
+      #   #   arr = ele1["name"].split(" ")
+      #   # end
+      # end
     end
   end
   return arr[0]
