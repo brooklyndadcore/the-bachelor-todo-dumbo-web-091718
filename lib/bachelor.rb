@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
   arr = []
   data.each do |ele|
     ele[1].each do |hsh|
-      if hsh["occupation"] == "Cruise Ship Singer" 
+      if hsh["occupation"] == occupation
         arr = hsh["name"].split(" ")
       end
     end
