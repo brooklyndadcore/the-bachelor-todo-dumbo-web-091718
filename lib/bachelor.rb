@@ -56,7 +56,7 @@ def get_average_age_for_season(data, season)
        count += hsh["age"].to_i
       end
     end
-    return count/ele.length
+    
   end
-  
+  return count
 end
