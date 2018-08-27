@@ -3,8 +3,8 @@ def get_first_name_of_season_winner(data, season)
   app_sea = data.keys
   arr = []
   app_sea.each do |ele|
-    if app_sea[ele] == season
-      return "in"
+    if ele == season
+      return app_sea[ele.to_sym]
       # app_sea[ele].each do |ele1|
       #   puts ele1
       #   # if ele1["status"] == "Winner" 
