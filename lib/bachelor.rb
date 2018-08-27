@@ -53,11 +53,9 @@ def get_average_age_for_season(data, season)
   data.each do |ele|
     if ele[0] == season
       ele[1].each do |hsh|
-        if hsh["status"] == "Winner" 
-          arr = hsh["name"].split(" ")
-        end
+       count += hsh["age"].to_i
       end
     end
   end
-  return arr[0]
+  return count
 end
