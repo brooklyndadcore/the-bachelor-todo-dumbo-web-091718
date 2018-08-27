@@ -60,5 +60,5 @@ def get_average_age_for_season(data, season)
     end
   end
   final = count.to_f/div
-  return final.ceil
+  return final.round
 end
