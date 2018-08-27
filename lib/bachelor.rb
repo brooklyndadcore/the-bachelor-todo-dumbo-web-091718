@@ -14,7 +14,17 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  arr = []
+  data.each do |ele|
+    if ele[0] == season
+      ele[1].each do |hsh|
+        if hsh["occupation"] == "Winner" 
+          arr = hsh["name"].split(" ")
+        end
+      end
+    end
+  end
+  return arr[0]
 end
 
 def count_contestants_by_hometown(data, hometown)
