@@ -48,6 +48,7 @@ def get_occupation(data, hometown)
   end
 end
 
+def get_first_name_of_season_winner(data, season)
  count = 0
  div = 0 
   data.each do |ele|
